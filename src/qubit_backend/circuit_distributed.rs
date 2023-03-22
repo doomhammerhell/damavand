@@ -38,7 +38,7 @@ impl Circuit {
             .collect();
     }
 
-    /// 
+    //
     pub fn sample_distributed(
         &mut self,
         num_samples: usize,

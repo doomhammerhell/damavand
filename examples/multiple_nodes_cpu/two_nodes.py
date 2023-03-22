@@ -5,17 +5,17 @@ from mpi4py import MPI
 
 def run_circuit(num_qubits, num_layers, apply_method="brute_force"):
     circuit = Circuit(num_qubits, apply_method=apply_method)
-    
+
     for l in range(num_layers): 
         for i in range(num_qubits):
             circuit.add_rotation_x_gate(i, np.pi/(i+1))
     # circuit.add_rotation_x_gate(0, np.pi/2)
     # for i in range(num_qubits):
     #     circuit.add_rotation_x_gate(i, np.pi/4)
-    
+
     for i in range(num_qubits):
         circuit.add_pauli_z_gate(i, True)
-    
+
     circuit.forward()
     samples = circuit.sample()
     return np.mean(circuit.extract_expectation_values(samples), axis=0)

@@ -229,9 +229,9 @@ extern "C" void sequential_measure_on_gpu(int num_amplitudes_per_gpu, double *pr
             stream);
 
         checkCudaErrors(cudaMemcpy(host_probabilities,
-                                   device_probabilities,
-                                   sizeof(double) * num_amplitudes_per_gpu,
-                                   cudaMemcpyDeviceToHost));
+                                    device_probabilities,
+                                    sizeof(double) * num_amplitudes_per_gpu,
+                                    cudaMemcpyDeviceToHost));
 
         checkCudaErrors(cudaDeviceSynchronize());
 

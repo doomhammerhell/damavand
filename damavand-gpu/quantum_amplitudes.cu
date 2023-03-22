@@ -21,22 +21,22 @@ QuantumAmplitudes::QuantumAmplitudes()
 
 void
 QuantumAmplitudes::set_zero_state(int num_amplitudes_per_gpu,
-                                  bool is_first_gpu)
+                                bool is_first_gpu)
 {
 
     checkCudaErrors(cudaMalloc((void **) &real_parts,
-                               sizeof(double) * num_amplitudes_per_gpu));
+                                sizeof(double) * num_amplitudes_per_gpu));
 
     checkCudaErrors(cudaMalloc((void **) &imaginary_parts,
-                               sizeof(double) * num_amplitudes_per_gpu));
+                                sizeof(double) * num_amplitudes_per_gpu));
 
     if(is_first_gpu)
     {
 
-      auto parameters = get_launching_parameters(
-          occupancy_strategy,
-          num_amplitudes_per_gpu,
-          init_zero_state_on_first_gpu);
+        auto parameters = get_launching_parameters(
+            occupancy_strategy,
+            num_amplitudes_per_gpu,
+            init_zero_state_on_first_gpu);
 
 #ifdef HAS_PROFILER
         sdkStartTimer(&init_kernel_timer);
@@ -55,10 +55,10 @@ QuantumAmplitudes::set_zero_state(int num_amplitudes_per_gpu,
     else
     {
 
-      auto parameters = get_launching_parameters(
-          occupancy_strategy,
-          num_amplitudes_per_gpu,
-          init_zero_state_on_other_gpu);
+        auto parameters = get_launching_parameters(
+            occupancy_strategy,
+            num_amplitudes_per_gpu,
+            init_zero_state_on_other_gpu);
 
 #ifdef HAS_PROFILER
         sdkStartTimer(&init_kernel_timer);
@@ -86,14 +86,14 @@ QuantumAmplitudes::load_on_device(
     sdkStartTimer(&copy_host_to_device_timer);
 #endif
     checkCudaErrors(cudaMemcpy(real_parts,
-                               amplitudes_real,
-                               sizeof(double) * num_amplitudes_per_gpu,
-                               cudaMemcpyHostToDevice));
+                                amplitudes_real,
+                                sizeof(double) * num_amplitudes_per_gpu,
+                                cudaMemcpyHostToDevice));
 
     checkCudaErrors(cudaMemcpy(imaginary_parts,
-                               amplitudes_real,
-                               sizeof(double) * num_amplitudes_per_gpu,
-                               cudaMemcpyHostToDevice));
+                                amplitudes_real,
+                                sizeof(double) * num_amplitudes_per_gpu,
+                                cudaMemcpyHostToDevice));
     checkCudaErrors(cudaDeviceSynchronize());
 
 #ifdef HAS_PROFILER

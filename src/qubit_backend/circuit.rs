@@ -199,7 +199,7 @@ impl Circuit {
                 num_amplitudes_per_gpu =
                     num_amplitudes_per_node / num_gpus_available_per_node as usize;
 
-                // in the case of mulple nodes, we need to allocate local and partner amplitudes on the
+                // in the case of multiple nodes, we need to allocate local and partner amplitudes on th  e
                 // host in order to transfer data between nodes and then push them back one each GPU.
                 if num_nodes > 1 {
                     local_amplitudes = Array::zeros(num_amplitudes_per_node);
@@ -592,7 +592,7 @@ impl Circuit {
     /// Usually run at the end of a run.
     ///
     /// # Returns:
-    /// `Vec<f64>` a vector containint the real parts of the amplitudes.
+    /// `Vec<f64>` a vector contain int the real parts of the amplitudes.
     pub fn get_real_part_state(&self) -> Vec<f64> {
         self.local_amplitudes.iter().map(|a| a.re).collect()
     }
@@ -702,20 +702,20 @@ impl Circuit {
 
         println!("profiling results");
         println!("profiling Forward: iterations {} elapsed time {}",
-                 self.profilers.get(&OperationType::Forward).unwrap().iterations,
-                 self.get_mean_elapsed_forward());
+                    self.profilers.get(&OperationType::Forward).unwrap().iterations,
+                    self.get_mean_elapsed_forward());
 
         println!("profiling InterNodeCommunications: iterations {} elapsed time {}",
-                 self.profilers.get(&OperationType::InterNodeCommunication).unwrap().iterations,
-                 self.get_mean_elapsed_inter_node_communications());
+                    self.profilers.get(&OperationType::InterNodeCommunication).unwrap().iterations,
+                    self.get_mean_elapsed_inter_node_communications());
 
         println!("profiling InterGPUCommunications: iterations {} elapsed time {}",
-                 self.profilers.get(&OperationType::InterGPUCommunication).unwrap().iterations,
-                 self.get_mean_elapsed_inter_gpu_communications());
+                    self.profilers.get(&OperationType::InterGPUCommunication).unwrap().iterations,
+                    self.get_mean_elapsed_inter_gpu_communications());
 
         println!("profiling Sampling: iterations {} elapsed time {}",
-                 self.profilers.get(&OperationType::Sampling).unwrap().iterations,
-                 self.get_mean_elapsed_sampling());
+                    self.profilers.get(&OperationType::Sampling).unwrap().iterations,
+                    self.get_mean_elapsed_sampling());
     }
 
     #[cfg(feature = "profiling")]

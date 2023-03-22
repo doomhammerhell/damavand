@@ -1,0 +1,15 @@
+/home/doom/Projects/MIT/damavand/target/debug/deps/target_lexicon-62fe5f08f57d51ca.rmeta: /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/lib.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/data_model.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/host.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/parse_error.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/targets.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/triple.rs /home/doom/Projects/MIT/damavand/target/debug/build/target-lexicon-fef7937a93228043/out/host.rs
+
+/home/doom/Projects/MIT/damavand/target/debug/deps/libtarget_lexicon-62fe5f08f57d51ca.rlib: /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/lib.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/data_model.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/host.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/parse_error.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/targets.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/triple.rs /home/doom/Projects/MIT/damavand/target/debug/build/target-lexicon-fef7937a93228043/out/host.rs
+
+/home/doom/Projects/MIT/damavand/target/debug/deps/target_lexicon-62fe5f08f57d51ca.d: /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/lib.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/data_model.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/host.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/parse_error.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/targets.rs /home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/triple.rs /home/doom/Projects/MIT/damavand/target/debug/build/target-lexicon-fef7937a93228043/out/host.rs
+
+/home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/lib.rs:
+/home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/data_model.rs:
+/home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/host.rs:
+/home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/parse_error.rs:
+/home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/targets.rs:
+/home/doom/.cargo/registry/src/github.com-1ecc6299db9ec823/target-lexicon-0.12.6/src/triple.rs:
+/home/doom/Projects/MIT/damavand/target/debug/build/target-lexicon-fef7937a93228043/out/host.rs:
+
+# env-dep:OUT_DIR=/home/doom/Projects/MIT/damavand/target/debug/build/target-lexicon-fef7937a93228043/out

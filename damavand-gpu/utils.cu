@@ -9,8 +9,7 @@ StopWatchInterface *init_kernel_timer = NULL;
 StopWatchInterface *apply_kernel_timer = NULL;
 StopWatchInterface *measure_kernel_timer = NULL;
 
-void init_timers()
-{
+void init_timers() {
     sdkCreateTimer(&copy_host_to_device_timer);
     sdkCreateTimer(&copy_device_to_host_timer);
     sdkCreateTimer(&copy_device_to_device_timer);
