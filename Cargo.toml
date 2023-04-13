@@ -10,7 +10,7 @@ rand="*"
 ndarray = {version="*", features=["rayon"]}
 rayon="*"
 num="*"
-pyo3={version="0.18.2", features=["extension-module"]}
+pyo3={version="0.18.3", features=["extension-module"]}
 sysinfo="*"
 libc="*"
 embed-doc-image="*"
